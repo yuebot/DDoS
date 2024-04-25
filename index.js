@@ -17,7 +17,7 @@ const cwd = process.cwd();
   console.log('[+]: Fetching site..');
   utils.sleep(1500);
 
-  numBots = 1;
+  numBots = 100;
 
   try {
     const response = await axios.get(site);
