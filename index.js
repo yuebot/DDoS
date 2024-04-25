@@ -1,10 +1,10 @@
 import fs from 'fs-extra';
 import axios from 'axios';
 import utils from './src/utils.js';
-import rl from 'readline-sync';
 const cwd = process.cwd();
 
 (async () => {
+  let numBots;
   const config = fs.readJSONSync(`${cwd}/config.json`);
   const {
     pingInterval,
